@@ -1,0 +1,120 @@
+
+body {
+    border: 10px solid #6E7582;
+    border-radius: 30px;
+
+    margin: 2px;
+    padding: 10px;
+
+    background-size: cover;
+    background-color: #231F20;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: aliceblue;
+}
+
+hr{
+    border-color: #6E7582;
+    border-width: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    height: 240px;
+    border-radius: 50px;
+}
+
+.name{
+    display: flex;
+    font-size: 90px;
+    justify-content: center;
+    border-bottom: 5px solid #6E7582;
+    color: #F7D716;
+}
+
+.roles{
+    font-size: 40px;
+    margin-left: 10%;
+    color: #ffef93;
+}
+
+.thumbnailgroup{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.thumbnail{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 500px;
+    height: 290px;
+    background-color: #2E2E3A;
+}
+
+.thumbnaildesc{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    text-decoration: none;
+    color: #EC9B3B;
+}
+
+.secttitle{
+    font-size: 70px;
+    color: #F7D716;
+    margin-left: 3rem;
+}
+
+.footer{
+    display: flex;
+    margin-left: 3rem
+}
+
+.footertitle{
+    font-size: xx-large;
+    color: #F7D716;
+}
+
+.contact{
+    float: left;
+}
+
+.about{
+    float: right;
+}
+
+.footergroup{
+    padding: 10px;
+}
+
+.textlink{
+    color: orange;
+    text-decoration: none;
+}
+
+.contact{
+    font-size: 20px;
+}
+
+.email>.textlink{
+    text-decoration: none;
+}
+
+.socials{
+    display: flex;
+    font-size: 20px;
+    margin-top: -20px;
+    gap: 5px;
+}
+
+.aboutdesc{
+    font-size: 20px;
+}
