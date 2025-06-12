@@ -73,6 +73,36 @@ img{
     margin-left: 3rem;
 }
 
+.skillcontainer{
+    display: inline-block;
+    width: 150px;
+    height: 175px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #2E2E3A;
+}
+
+.skillcategory{
+    overflow-x: auto;
+}
+
+.skillcontainer>img{
+    height: 80px;
+    padding-bottom: 0px;
+}
+
+.skilltitle{
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.skilldesc{
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+}
+
 .footer{
     display: flex;
     margin-left: 3rem
