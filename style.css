@@ -40,15 +40,35 @@ img{
 .roles{
     font-size: 40px;
     margin-left: 10%;
-    color: #ffef93;
 }
 
 .mainsocials{
-    display: flex;
-    justify-content: right;
     font-size: 40px;
     margin-top: -20px;
-    gap: 5px;
+    margin-left: 10%;
+}
+
+.listheader {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: #F7D716;
+}
+
+.listcontent {
+    font-size: 25px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.listcontent>h3{
+    color: #EC9B3B;
+}
+
+.listcontent>ul{
+    font-size: 22px;
+    margin-top: 10px;
 }
 
 .thumbnailgroup{
@@ -81,6 +101,20 @@ img{
     margin-left: 3rem;
 }
 
+.screenshots>img{
+    border-radius: 80px;
+    display: block;
+    text-align: center;
+    height: 500px;
+}
+
+.middleh3{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: #F7D716;
+}
+
 .skills>h2{
     font-size: 40px;
     text-align: center;
@@ -97,6 +131,7 @@ img{
 
 .skillcategory{
     overflow-x: auto;
+    text-align: center;
 }
 
 .skillcontainer>img{
