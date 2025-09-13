@@ -210,6 +210,12 @@ img{
         margin-left: 10px;
     }
 
+    .screenshots>img{
+        border-radius: 40px;
+        width: 400px;
+        height: auto;
+    }
+
     .thumbnail{
         width: 400px;
         height: auto;
@@ -222,5 +228,26 @@ img{
     .footer{
         display: flex;
         flex-direction: column;
+    }
+
+    .email{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    img{
+        height: 190px;
+    }
+
+    .screenshots>img{
+        border-radius: 40px;
+        width: 400px;
+        height: auto;
+    }
+
+    .thumbnail{
+        width: 400px;
+        height: auto;
     }
 }
