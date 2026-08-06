@@ -251,3 +251,292 @@ img{
         height: auto;
     }
 }
+
+
+
+/*=====Interactivity Stuff====*/
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+a,
+img,
+.thumbnail,
+.skillcontainer,
+.listcontent,
+.secttitle,
+.name,
+.textlink{
+    transition:all .3s ease;
+}
+
+body{
+    background:
+        radial-gradient(circle at top,
+        #353543 0%,
+        #2B2830 30%,
+        #231F20 100%);
+}
+
+.textlink{
+    color:#EC9B3B;
+    text-decoration:none;
+    position:relative;
+    display:inline-block;
+}
+
+.textlink::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0%;
+    height:2px;
+    background:#F7D716;
+    transition:width .3s;
+}
+
+.textlink:hover{
+    color:#F7D716;
+}
+
+.textlink:hover::after{
+    width:100%;
+}
+
+.name:hover{
+    color:#FFD93D;
+    text-shadow:
+        0 0 10px rgba(247,215,22,.5),
+        0 0 20px rgba(247,215,22,.3);
+}
+
+.secttitle{
+    display:inline-block;
+    position:relative;
+}
+
+.secttitle::after{
+    content:"";
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    width:0%;
+    height:4px;
+    background:#F7D716;
+    transition:.4s;
+}
+
+.secttitle:hover::after{
+    width:100%;
+}
+
+.listcontent{
+    background:#2A2A33;
+    border-left:5px solid transparent;
+}
+
+.listcontent:hover{
+    transform:translateX(10px);
+    border-left:5px solid #F7D716;
+    background:#373743;
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+}
+
+.thumbnail{
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.thumbnail:hover{
+    transform:translateY(-10px) scale(1.02);
+    border-color:#F7D716;
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+
+.thumbnail::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:0;
+    height:0;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    transition:.6s;
+    pointer-events:none;
+}
+
+.thumbnail:hover::before{
+    width:700px;
+    height:700px;
+}
+
+.thumbnail img{
+    transition:transform .4s;
+}
+
+.thumbnail:hover img{
+    transform:scale(1.08);
+}
+
+.thumbnaildesc{
+    transition:.3s;
+}
+
+.thumbnail:hover .thumbnaildesc{
+    color:#F7D716;
+}
+
+.screenshots img{
+    transition:transform .4s, box-shadow .4s;
+}
+
+.screenshots img:hover{
+    transform:scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+
+.skillcontainer{
+    cursor:default;
+}
+
+.skillcontainer:hover{
+    transform:translateY(-8px);
+    border-color:#F7D716;
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+}
+
+.skillcontainer img{
+    transition:transform .3s;
+}
+
+.skillcontainer:hover img{
+    transform:scale(1.12) rotate(-5deg);
+}
+
+.skilltitle{
+    transition:.3s;
+}
+
+.skillcontainer:hover .skilltitle{
+    color:#F7D716;
+}
+
+button,
+.thumbnail,
+.textlink{
+    cursor:pointer;
+}
+
+button{
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+#topBtn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#F7D716;
+    color:#231F20;
+
+    font-size:28px;
+    font-weight:bold;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+
+    cursor:pointer;
+
+    opacity:0;
+    pointer-events:none;
+
+    transition:.3s;
+    z-index:9999;
+}
+
+#topBtn.show{
+    opacity:1;
+    pointer-events:auto;
+}
+
+#topBtn:hover{
+    transform:scale(1.12);
+}
+
+#topBtn:active{
+    transform:scale(.95);
+}
+
+img{
+    transition:transform .3s;
+}
+
+/* Prevent profile image from zooming */
+body > img:hover{
+    transform:none;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#231F20;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#555;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#F7D716;
+}
+
+::selection{
+    background:#F7D716;
+    color:#231F20;
+}
+
+a:focus-visible,
+button:focus-visible{
+    outline:3px solid #F7D716;
+    outline-offset:4px;
+}

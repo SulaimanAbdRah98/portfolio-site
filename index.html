@@ -10,6 +10,36 @@
     <link rel="stylesheet", href="style.css">
  </head>
 
+<button id="topBtn">↑</button>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".thumbnail, .listcontent, .skillcontainer").forEach(el => {
+    el.classList.add("fade");
+    observer.observe(el);
+});
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+    topBtn.classList.toggle("show", window.scrollY > 400);
+});
+
+topBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
+
  <body>
     <h1 class="name">Sulaiman Abdul Rahman</h1>
     <div class="headersect">
@@ -107,6 +137,11 @@
         <li>
             <div class="listheader">2025-Present</div>
             <div class="listcontent">
+                <h3>Ash Games Studios - Art Lead</h3>
+                    <ul>-Team Management: Coordinate the art team's tasks to ensure smooth production</ul>
+                    <ul>-Technical Art: Implement art assets as well as providing technical support to the team</ul>
+                    <ul>-Rendering Pipeline: Established a custom render pipeline to integrate 2D characters in a 3D environment</ul>
+                    <ul>-Shader & VFX: Created custom shaders and VFX</ul>
                 <h3>EduBlitz - (Part Time) Animation Trainer</h3>
                     <p>Teaching and training basic animation to youths as their after-school co-curriculum activity(CCA)</p>
             </div>
