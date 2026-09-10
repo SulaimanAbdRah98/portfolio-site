@@ -207,8 +207,14 @@ img{
     gap: 5px;
 }
 
-.aboutdesc{
+.aboutlist {
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.aboutdesc {
     font-size: 30px;
+    margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 600px) {
