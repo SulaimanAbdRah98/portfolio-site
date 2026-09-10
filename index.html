@@ -43,6 +43,16 @@ topBtn.addEventListener("click", () => {
 
 
  <body>
+    <nav class="side-nav">
+        <a href="#history">Timeline</a>
+        <a href="#works">Works</a>
+        <a href="#videos">Videos</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About Me</a>
+        <a href="#contacts">Contact</a>
+    </nav>
+
     <h1 class="name">Sulaiman Abdul Rahman</h1>
     <div class="headersect">
         <p class="roles">
@@ -70,10 +80,10 @@ topBtn.addEventListener("click", () => {
             <a class="textlink" target="_blank" href="https://vimeo.com/user96352532">Vimeo<a/>
         </div>
     </div>
-    
+
     <hr/>
 
-    <h1 class="secttitle">My Journey Timeline</h2>
+    <h1 class="secttitle" id="history">My Journey Timeline</h2>
     <ul>
         <li>
             <div class="listheader">2012</div>
@@ -90,7 +100,7 @@ topBtn.addEventListener("click", () => {
         <li>
             <div class="listheader">2016-2018</div>
             <div class="listcontent">
-                <h3>Self employed / Volunteer</h3>
+                <h3>SCDF Instructor</h3>
                 <div class="historydesc">
                     <p>
                         Responsible for helping officers with admin works as well as conducting lessons to huge classrooms
@@ -171,7 +181,7 @@ topBtn.addEventListener("click", () => {
 
     <hr/>
 
-    <h1 class="secttitle">Select Works</h1>
+    <h1 class="secttitle" id="works">Select Works</h1>
     
     <div class="works thumbnailgroup">
         <div class="thumbnail">
@@ -197,7 +207,7 @@ topBtn.addEventListener("click", () => {
 
     <br>
 
-    <div class="middleh3">Videos:</div>
+    <div class="middleh3" id="videos">Videos:</div>
     <div class="works thumbnailgroup">
         <div class="thumbnail">
             <a href="https://vimeo.com/946313075" target="_blank"><img src="./resources/Tech Artist Reel.jpg" alt="Ship landing VFX shot"></a>
@@ -217,7 +227,7 @@ topBtn.addEventListener("click", () => {
 
     <hr/>
 
-    <h1 class="secttitle">Projects</h1>
+    <h1 class="secttitle" id="projects">Projects</h1>
     <div class="projects thumbnailgroup">
         <div class="thumbnail">
             <a href="https://youtu.be/STP0E8WfGM8" target="_blank"><img src="./resources/Butter Royale.jpg" alt="Butter Royale Logo"></a>
@@ -238,7 +248,7 @@ topBtn.addEventListener("click", () => {
     <hr/>
 
     <div class="skills">
-        <h1 class="secttitle">skills</h1>
+        <h1 class="secttitle" id="skills">skills</h1>
         <h2>Programs</h2>
         <div class="skillcategory">
             <div class="skillcontainer">
@@ -349,7 +359,7 @@ topBtn.addEventListener("click", () => {
 
     <div class="footer">
         <div class="footergroup contact">
-            <h2 class="footertitle">Contact Me</h2>
+            <h2 class="footertitle" id="contacts">Contact Me</h2>
 
                 <div class="email">
                     You can email me at:<br>
@@ -364,7 +374,7 @@ topBtn.addEventListener("click", () => {
         </div>
 
         <div class="footergroup about">
-    <h2 class="footertitle">About Me</h2>
+    <h2 class="footertitle" id="about">About Me</h2>
         <ol class="aboutlist">
             <li class="aboutdesc">
                 I'm a technical artist with years of industry experience and a fiery passion for everything art and tech. I started learning game development at 14 and have since shipped multiple games
